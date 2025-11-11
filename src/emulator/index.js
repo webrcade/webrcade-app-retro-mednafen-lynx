@@ -210,10 +210,9 @@ export class Emulator extends RetroAppWrapper {
       debug, // debug
       false,
     );
-    loop.setAdjustTimestampEnabled(false);
+    // loop.setAdjustTimestampEnabled(false);
     return loop;
   }
-
 
   getDefaultAspectRatio() {
     return (this.rotation === this.CART_ROTATE_LEFT || this.rotation === this.CART_ROTATE_RIGHT) ? .6375 : 1.569; // ; // 1.569;
