@@ -93,6 +93,10 @@ export class Emulator extends RetroAppWrapper {
     ).setDebug(this.debug);
   }
 
+  getHashFileExtension() {
+    return 'lnx';
+  }
+
   onFrame() {
     if (this.audioStarted !== -1) {
       if (this.audioStarted > 1) {
